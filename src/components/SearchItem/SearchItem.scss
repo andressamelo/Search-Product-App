@@ -1,4 +1,5 @@
 @import '../../colors.scss';
+@import '../../layouts.scss';
 
 .SearchItem{
     margin: 0 1.16em;
@@ -10,10 +11,10 @@
     &__image--container{
         max-width: 160px;
         min-width: 60px;
-        border-radius: 4px;
         width: 20%;
         background-color: $body_color;
         position: relative;
+        @include border-radius(4px);
         >div{
             padding-top: 100%;
         }

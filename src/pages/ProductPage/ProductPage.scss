@@ -1,10 +1,11 @@
 @import '../../colors.scss';
+@import '../../layouts.scss';
 
 .ProductPage{
     &__product{
         background: #fff;
-        border-radius: 4px;
         padding: 2em;
+        @include border-radius(4px);
         &--container{
             margin-right: 2em;
         }
@@ -34,12 +35,12 @@
         }
         button{
             width: 100%;
-            border-radius: 3px;
             padding: 0.6em 0 0.65em 0;
             font-size: 1.2em;
             background: $blue;
             color: #fff;
             cursor: pointer;
+            @include border-radius(4px);
         }
     }
     &__description{
