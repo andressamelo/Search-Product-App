@@ -1,0 +1,79 @@
+@import '../../colors.scss';
+
+.SearchItem{
+    margin: 0 1.16em;
+    padding: 1.16em 0;
+    border-bottom: 1px solid $body_color;
+    &:last-child{
+        border: none;
+    }
+    &__image--container{
+        max-width: 160px;
+        min-width: 60px;
+        border-radius: 4px;
+        width: 20%;
+        background-color: $body_color;
+        position: relative;
+        >div{
+            padding-top: 100%;
+        }
+        img{
+            max-width: 100%;
+            position: absolute;
+            top: 50%; left: 50%;
+            -webkit-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                    transform: translate(-50%,-50%);
+        }
+    }
+    &__price--title{
+        margin: 0 1em;
+        max-width: 400px;
+    }
+    &__state--name{
+        font-size: 0.9em;
+        min-width: 170px;
+        margin: 3em 0 0 auto;
+        color: rgba($color: #000, $alpha: 0.6);
+    }
+    @media (max-width: 800px) {
+        &__state--name{
+            min-width: 7.2em;
+        }
+        &__price--title{
+            font-size: 0.9em;
+        }
+    }
+    @media (max-width: 760px) {
+        &__state--name{
+            min-width: 100px;
+        }
+        &__price--title{
+            font-size: 0.8em;
+            h2{
+                margin: 0.6em 0;
+            }
+            h3{
+                text-overflow: ellipsis;
+                max-width: calc(100vh - 445px);
+                margin: 0;
+                overflow: hidden;
+            }
+        }
+
+    }
+    @media (max-width: 350px) {
+        font-size: 0.9em;
+        &__image--container{
+            min-width: 50px;
+        }
+        &__price--title{
+            h3{
+                max-width: 120px;
+            }
+        }
+        &__state--name{
+            min-width: 4em;
+        }
+    }
+}

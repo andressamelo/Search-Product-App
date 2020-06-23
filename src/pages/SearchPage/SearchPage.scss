@@ -1,0 +1,27 @@
+@import '../../colors.scss';
+
+.SearchPage{
+    min-height: calc(100vh - 9.13em);
+    position: relative;
+    margin-bottom: 4em;
+    &__products__not__found{
+        margin: auto;
+    }
+    &__search__results{
+        background: $white;
+        border-radius: 4px;
+    }
+    &__spinner__wrapper{
+        margin-top: 2em;
+    }
+    p.__grey.flex{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: auto;
+        margin: 0;
+        padding: 1em 0;
+    }
+    @media (max-width: 760px) {
+        margin-bottom: 2.5%;
+    }
+}

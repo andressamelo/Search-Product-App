@@ -1,0 +1,33 @@
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flex__strech{
+   display: flex; 
+}
+.container{
+    width: 80%;
+    margin: auto;
+    max-width: 1200px;
+}
+.f1{
+    flex: 1;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.m-a{
+    margin: auto;
+}
+.ml-1{
+    margin-left: 1em;
+}
+.center{
+    text-align: center;
+}
+@media (max-width: 600px){
+    .container{
+        width: 95%;
+    }
+}
