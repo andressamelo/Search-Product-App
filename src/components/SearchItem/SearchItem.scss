@@ -29,6 +29,9 @@
     &__price--title{
         margin: 0 1em;
         max-width: 400px;
+        &--icon {
+            margin-left: 0.5em;
+        }
     }
     &__state--name{
         font-size: 0.9em;
