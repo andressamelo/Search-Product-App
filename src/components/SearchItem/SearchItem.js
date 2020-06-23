@@ -11,6 +11,7 @@ const SearchItem = props => (
         </div>
         <div className='SearchItem__price--title'>
             <h2><NumberFormat value={props.price} displayType={'text'} thousandSeparator={true} prefix={'$'} /></h2>
+            <h3>{props.free_shipping}</h3>
             <h3>{props.title}</h3>
         </div>
         <p className='SearchItem__state--name'>{props.address.state_name}</p>

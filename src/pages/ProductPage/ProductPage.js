@@ -26,8 +26,8 @@ class ProductPage extends Component {
                             <p className='ProductPage__description' >{description}</p>
                         </div>
                         <div className='ProductPage__product__details'>
-                            {product.condition}
-                            {product.subtitle}
+                            <p>{product.condition} - {product.sold_quantity} vendidos</p>
+                            <span>{product.subtitle}</span>
                             <h2>{product.title}</h2>
                             <h1><NumberFormat value={product.price} displayType={'text'} thousandSeparator={true} prefix={'$'} /></h1>
                             <button>Comprar</button>

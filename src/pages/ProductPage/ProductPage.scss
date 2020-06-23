@@ -20,6 +20,9 @@
     &__product__details{
         max-width: 250px;
         width: 40%;
+        p {
+            margin: 0.2em 0;
+        }
         h1{
             font-size: 2.9em;
             margin: 0.4em 0 1.3em 0;
