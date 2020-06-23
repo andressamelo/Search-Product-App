@@ -35,7 +35,6 @@ class SearchPage extends Component {
         fetch(`https://api.mercadolibre.com/sites/MLA/search${this.search}`)
             .then(res => res.json())
             .then(res => {
-                console.log(res.results[0])
                 this.showProductsQty = 4;
                 this.products = res.results;
                 this.setState({ products: res.results.slice(0, this.showProductsQty), isLoader: false, err: null });
@@ -54,7 +53,6 @@ class SearchPage extends Component {
     }
 
     errHandler = err => {
-        console.log(err)
         switch (err) {
             case "TypeError: Failed to fetch":
                 return this.setState({ isLoader: false, err });

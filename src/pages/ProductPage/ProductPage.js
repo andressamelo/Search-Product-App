@@ -43,7 +43,6 @@ class ProductPage extends Component {
         fetch(`https://api.mercadolibre.com/items/${id}`)
             .then(res => res.json())
             .then(res => {
-                console.log(res)
                 if (res.error) return this.errHandler(res.error);
                 this.setState({ product: res, isLoader: false });
             })
