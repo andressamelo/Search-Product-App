@@ -1,4 +1,15 @@
-## Available Scripts
+# About
+
+Project that searches for products using the Mercado Libre API
+
+## Client
+
+- HTML
+- JS (React)
+- SASS
+- BEM
+
+## To run the project locally
 
 In the project directory, you can run:
 
@@ -6,9 +17,6 @@ In the project directory, you can run:
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
 ### `npm test`
 
